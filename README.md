@@ -6,7 +6,7 @@ Run the [ZNC](http://znc.in) IRC Bouncer in a Docker container. Contains zncstra
 ## Prerequisites
 
 1. Install [Docker](http://docker.io/).
-2. Make a znc data folder. For example: `mkdir $HOME/.znc`. We will be using `$HOME/.znc` as an exampkle throughout these instructions.
+2. Make a znc data folder. For example: `mkdir $HOME/.znc`. We will be using `$HOME/.znc` as an example throughout these instructions.
 
 ## Running
 
