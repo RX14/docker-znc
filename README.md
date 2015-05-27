@@ -1,20 +1,19 @@
 # ZNC for Docker
 
-Run the [ZNC](http://znc.in) IRC Bouncer in a Docker container.
+Run the [ZNC](http://znc.in) IRC Bouncer in a Docker container. Contains zncstrap theme!
 
 
 ## Prerequisites
 
 1. Install [Docker](http://docker.io/).
-2. Make .znc folder: `mkdir $HOME/.znc`
-
+2. Make a znc data folder. For example: `mkdir $HOME/.znc`. We will be using `$HOME/.znc` as an exampkle throughout these instructions.
 
 ## Running
 
 To retain your ZNC settings between runs, you will need to bind a directory
 from the host to `/znc-data` in the container. For example:
 
-    docker run -d -p 6667 -v $HOME/.znc:/znc-data jimeh/znc
+    docker run -d -p 6667 -v $HOME/.znc:/znc-data rx14/znc
 
 This will download the image if needed, and create a default config file in
 your data directory unless you already have a config in place. The default
